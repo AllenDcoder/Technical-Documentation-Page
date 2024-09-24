@@ -1,0 +1,139 @@
+html,
+body {
+    background-color: bisque;
+    font-family: Open sans-serif;
+    line-height: 1.5;
+    min-width: 290px ;
+}
+
+
+/* Navigation Bar */
+#navbar {
+    position:fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 300px;
+    min-width: 290px;
+    border-right: solid black ;
+}
+
+header {
+    color: black;
+    margin: 10px;
+    font-size: 1.8em;
+    font-weight: thin;
+    text-align: center;
+}
+
+#main-doc{ 
+    position: absolute;
+    margin-left: 310px;
+    padding: 15px;
+}
+
+#main-doc header {
+    text-align: left;
+    margin: 0px;
+}
+
+#navbar .nav-link {
+    display: relative;
+    width: 100%;
+    border-top: 1px solid;
+    padding:2px 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    list-style: none;
+} 
+
+#navbar .nav-link:last-of-type {
+    border-bottom: 1px solid;
+}
+
+#navbar a{ 
+    display: block;
+    padding: 10px 30px;
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+section article {
+    margin: 15px;
+    font-size: 0.95rem;
+}
+
+section li {
+    margin: 15px 0 0 20px;
+}
+
+code {
+    display:  block;
+    text-align: left;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 5px;
+    position: relative;
+    background-color: darkgrey;
+    max-width: 50%;
+    word-break: normal;
+    word-wrap: normal;
+}
+
+#footer {
+    text-align: justify;
+    margin-bottom: 6px;
+}
+
+#footer a {
+    color: maroon;
+    cursor: pointer;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+@media only screen and (max-width: 815px) {
+    /* For mobile phones: */
+    #navbar .nav-link {
+      border: 1px solid;
+      height: 37px;
+     text-align: center;
+    }
+
+    #navbar {
+        position: absolute;
+        top: 0;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        max-height: 275px;
+        border: none;
+        z-index: 1;
+        border-bottom: 2px solid;
+        background-color: bisque;
+      }
+
+      #main-doc {
+        position: relative;
+        margin-left: 0px;
+        margin-top: 270px;
+      }
+
+      #main-doc header {
+        text-align: center;
+      }
+
+      code {
+        margin-left: 80px;
+        width: 100%;
+      }
+    
+}
+
+
+      
